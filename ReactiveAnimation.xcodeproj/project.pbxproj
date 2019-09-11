@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F4C662F23290E77002CC1FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C662E23290E77002CC1FC /* AppDelegate.swift */; };
+		5F4C663123290E77002CC1FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C663023290E77002CC1FC /* ViewController.swift */; };
+		5F4C663423290E77002CC1FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4C663223290E77002CC1FC /* Main.storyboard */; };
+		5F4C663623290E79002CC1FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4C663523290E79002CC1FC /* Assets.xcassets */; };
+		5F4C663923290E79002CC1FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4C663723290E79002CC1FC /* LaunchScreen.storyboard */; };
+		5F4C664423290E79002CC1FC /* ReactiveAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C664323290E79002CC1FC /* ReactiveAnimationTests.swift */; };
+		5F4C664F23291085002CC1FC /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C664E23291085002CC1FC /* CustomButton.swift */; };
+		5F4C6652232921BE002CC1FC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6650232921BE002CC1FC /* RxCocoa.framework */; };
+		5F4C6653232921BE002CC1FC /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6650232921BE002CC1FC /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F4C6654232921BE002CC1FC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6651232921BE002CC1FC /* RxSwift.framework */; };
+		5F4C6655232921BE002CC1FC /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6651232921BE002CC1FC /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F4C664023290E79002CC1FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F4C662323290E77002CC1FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F4C662A23290E77002CC1FC;
+			remoteInfo = ReactiveAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F4C6656232921BE002CC1FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F4C6655232921BE002CC1FC /* RxSwift.framework in Embed Frameworks */,
+				5F4C6653232921BE002CC1FC /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F4C662B23290E77002CC1FC /* ReactiveAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4C662E23290E77002CC1FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F4C663023290E77002CC1FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F4C663323290E77002CC1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F4C663523290E79002CC1FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F4C663823290E79002CC1FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F4C663A23290E79002CC1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4C663F23290E79002CC1FC /* ReactiveAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4C664323290E79002CC1FC /* ReactiveAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveAnimationTests.swift; sourceTree = "<group>"; };
+		5F4C664523290E79002CC1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F4C664E23291085002CC1FC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5F4C6650232921BE002CC1FC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Frameworks/RxCocoa.framework; sourceTree = "<group>"; };
+		5F4C6651232921BE002CC1FC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Frameworks/RxSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F4C662823290E77002CC1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C6654232921BE002CC1FC /* RxSwift.framework in Frameworks */,
+				5F4C6652232921BE002CC1FC /* RxCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4C663C23290E79002CC1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F4C662223290E77002CC1FC = {
+			isa = PBXGroup;
+			children = (
+				5F4C6650232921BE002CC1FC /* RxCocoa.framework */,
+				5F4C6651232921BE002CC1FC /* RxSwift.framework */,
+				5F4C662D23290E77002CC1FC /* ReactiveAnimation */,
+				5F4C664223290E79002CC1FC /* ReactiveAnimationTests */,
+				5F4C662C23290E77002CC1FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F4C662C23290E77002CC1FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C662B23290E77002CC1FC /* ReactiveAnimation.app */,
+				5F4C663F23290E79002CC1FC /* ReactiveAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F4C662D23290E77002CC1FC /* ReactiveAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C662E23290E77002CC1FC /* AppDelegate.swift */,
+				5F4C663023290E77002CC1FC /* ViewController.swift */,
+				5F4C664E23291085002CC1FC /* CustomButton.swift */,
+				5F4C663223290E77002CC1FC /* Main.storyboard */,
+				5F4C663523290E79002CC1FC /* Assets.xcassets */,
+				5F4C663723290E79002CC1FC /* LaunchScreen.storyboard */,
+				5F4C663A23290E79002CC1FC /* Info.plist */,
+			);
+			path = ReactiveAnimation;
+			sourceTree = "<group>";
+		};
+		5F4C664223290E79002CC1FC /* ReactiveAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F4C664323290E79002CC1FC /* ReactiveAnimationTests.swift */,
+				5F4C664523290E79002CC1FC /* Info.plist */,
+			);
+			path = ReactiveAnimationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F4C662A23290E77002CC1FC /* ReactiveAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4C664823290E79002CC1FC /* Build configuration list for PBXNativeTarget "ReactiveAnimation" */;
+			buildPhases = (
+				5F4C662723290E77002CC1FC /* Sources */,
+				5F4C662823290E77002CC1FC /* Frameworks */,
+				5F4C662923290E77002CC1FC /* Resources */,
+				5F4C6656232921BE002CC1FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveAnimation;
+			productName = ReactiveAnimation;
+			productReference = 5F4C662B23290E77002CC1FC /* ReactiveAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F4C663E23290E79002CC1FC /* ReactiveAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F4C664B23290E79002CC1FC /* Build configuration list for PBXNativeTarget "ReactiveAnimationTests" */;
+			buildPhases = (
+				5F4C663B23290E79002CC1FC /* Sources */,
+				5F4C663C23290E79002CC1FC /* Frameworks */,
+				5F4C663D23290E79002CC1FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F4C664123290E79002CC1FC /* PBXTargetDependency */,
+			);
+			name = ReactiveAnimationTests;
+			productName = ReactiveAnimationTests;
+			productReference = 5F4C663F23290E79002CC1FC /* ReactiveAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F4C662323290E77002CC1FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Wasim;
+				TargetAttributes = {
+					5F4C662A23290E77002CC1FC = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5F4C663E23290E79002CC1FC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 5F4C662A23290E77002CC1FC;
+					};
+				};
+			};
+			buildConfigurationList = 5F4C662623290E77002CC1FC /* Build configuration list for PBXProject "ReactiveAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F4C662223290E77002CC1FC;
+			productRefGroup = 5F4C662C23290E77002CC1FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F4C662A23290E77002CC1FC /* ReactiveAnimation */,
+				5F4C663E23290E79002CC1FC /* ReactiveAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F4C662923290E77002CC1FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C663923290E79002CC1FC /* LaunchScreen.storyboard in Resources */,
+				5F4C663623290E79002CC1FC /* Assets.xcassets in Resources */,
+				5F4C663423290E77002CC1FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4C663D23290E79002CC1FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F4C662723290E77002CC1FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C663123290E77002CC1FC /* ViewController.swift in Sources */,
+				5F4C662F23290E77002CC1FC /* AppDelegate.swift in Sources */,
+				5F4C664F23291085002CC1FC /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F4C663B23290E79002CC1FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C664423290E79002CC1FC /* ReactiveAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F4C664123290E79002CC1FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F4C662A23290E77002CC1FC /* ReactiveAnimation */;
+			targetProxy = 5F4C664023290E79002CC1FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F4C663223290E77002CC1FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4C663323290E77002CC1FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F4C663723290E79002CC1FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F4C663823290E79002CC1FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F4C664623290E79002CC1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F4C664723290E79002CC1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F4C664923290E79002CC1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ReactiveAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.grandcentrix.ReactiveAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F4C664A23290E79002CC1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ReactiveAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.grandcentrix.ReactiveAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F4C664C23290E79002CC1FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				INFOPLIST_FILE = ReactiveAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.grandcentrix.ReactiveAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveAnimation.app/ReactiveAnimation";
+			};
+			name = Debug;
+		};
+		5F4C664D23290E79002CC1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				INFOPLIST_FILE = ReactiveAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.grandcentrix.ReactiveAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveAnimation.app/ReactiveAnimation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F4C662623290E77002CC1FC /* Build configuration list for PBXProject "ReactiveAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4C664623290E79002CC1FC /* Debug */,
+				5F4C664723290E79002CC1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F4C664823290E79002CC1FC /* Build configuration list for PBXNativeTarget "ReactiveAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4C664923290E79002CC1FC /* Debug */,
+				5F4C664A23290E79002CC1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F4C664B23290E79002CC1FC /* Build configuration list for PBXNativeTarget "ReactiveAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4C664C23290E79002CC1FC /* Debug */,
+				5F4C664D23290E79002CC1FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F4C662323290E77002CC1FC /* Project object */;
+}
