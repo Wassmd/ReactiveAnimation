@@ -18,6 +18,7 @@
 		5F4C6653232921BE002CC1FC /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6650232921BE002CC1FC /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F4C6654232921BE002CC1FC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6651232921BE002CC1FC /* RxSwift.framework */; };
 		5F4C6655232921BE002CC1FC /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4C6651232921BE002CC1FC /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F9FA913232A21B600E95C6B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9FA912232A21B600E95C6B /* Animator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5F4C664E23291085002CC1FC /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		5F4C6650232921BE002CC1FC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Frameworks/RxCocoa.framework; sourceTree = "<group>"; };
 		5F4C6651232921BE002CC1FC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Frameworks/RxSwift.framework; sourceTree = "<group>"; };
+		5F9FA912232A21B600E95C6B /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				5F4C662E23290E77002CC1FC /* AppDelegate.swift */,
 				5F4C663023290E77002CC1FC /* ViewController.swift */,
 				5F4C664E23291085002CC1FC /* CustomButton.swift */,
+				5F9FA912232A21B600E95C6B /* Animator.swift */,
 				5F4C663223290E77002CC1FC /* Main.storyboard */,
 				5F4C663523290E79002CC1FC /* Assets.xcassets */,
 				5F4C663723290E79002CC1FC /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9FA913232A21B600E95C6B /* Animator.swift in Sources */,
 				5F4C663123290E77002CC1FC /* ViewController.swift in Sources */,
 				5F4C662F23290E77002CC1FC /* AppDelegate.swift in Sources */,
 				5F4C664F23291085002CC1FC /* CustomButton.swift in Sources */,

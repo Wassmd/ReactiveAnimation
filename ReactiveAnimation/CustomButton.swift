@@ -2,7 +2,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class CustomButton: UIButton {
+final class CustomButton: UIButton, Animatable {
     
     private let disposeBag = DisposeBag()
     
@@ -21,6 +21,7 @@ final class CustomButton: UIButton {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+    
     
     init() {
         super.init(frame: .zero)
@@ -65,32 +66,22 @@ final class CustomButton: UIButton {
     private func setupObserving() {
         rx.controlEvent(.touchDown)
             .subscribe(onNext: { [weak self] _ in
-                self?.animateButton()
+                guard let self = self else { return }
+        
+                self.animate(view: self)
             })
             .disposed(by: disposeBag)
         
-        let resetObservables = [rx.controlEvent(.touchCancel).asObservable(),
-                                rx.controlEvent(.touchUpInside).asObservable(),
-                                rx.controlEvent(.touchUpOutside).asObservable()]
+        let resetObservables = [rx.controlEvent(.touchCancel),
+                                rx.controlEvent(.touchUpInside),
+                                rx.controlEvent(.touchUpOutside)].map { $0.asObservable() }
         
         Observable.merge(resetObservables)
             .subscribe(onNext: { [weak self] _ in
-                self?.resetToOriginalState()
+                guard let self = self else { return }
+                
+                self.resetToOriginalState(view: self)
             })
             .disposed(by: disposeBag)
-    }
-    
-    private func animateButton() {
-        let timingParameter = UICubicTimingParameters(controlPoint1: CGPoint(x: 0, y: 0), controlPoint2: CGPoint(x: 1, y: 1))
-        let animate = UIViewPropertyAnimator.init(duration: 0.15, timingParameters: timingParameter)
-        animate.addAnimations {
-            self.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        }
-
-        animate.startAnimation()
-    }
-    
-    private func resetToOriginalState() {
-        transform = .identity
     }
 }
